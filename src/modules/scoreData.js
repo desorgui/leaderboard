@@ -1,30 +1,30 @@
 const scoreData = [
   {
-    name: 'Master',
+    name: 'Jean Louis',
     score: '1000'
   },
   {
-    name: 'Live',
+    name: 'John Doe',
     score: '955'
   },
   {
-    name: 'Okay',
+    name: 'Frantz Dor',
     score: '1200'
   },
   {
-    name: 'Best',
+    name: 'Rachel Eve',
     score: '300'
   },
   {
-    name: 'Live',
+    name: 'Stanley Ricardo',
     score: '789'
   },
   {
-    name: 'Young',
+    name: 'Shneider Pitt',
     score: '9999'
   },
   {
-    name: 'Gold',
+    name: 'Jeffry Ulog',
     score: '994'
   },
 ]

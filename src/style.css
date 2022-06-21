@@ -7,6 +7,12 @@ body {
   padding: 150px;
 }
 
+button {
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 4px 4px 8px #333;
+}
+
 li {
   padding: 0 10px;
   list-style: none;
@@ -27,6 +33,15 @@ li:nth-child(even) {
   justify-content: space-between;
 }
 
+h1 {
+  font-size: 3.5em;
+}
+
+.side-title {
+  padding-bottom: 30px;
+  font-size: 2em;
+}
+
 .scoreContainer {  
   width: 50%;
 }
@@ -36,11 +51,22 @@ li:nth-child(even) {
   justify-content:space-between;
 }
 
+.refresh {
+  padding: 7px 15px;
+  max-height: 30px;
+  font-size: 16px;
+}
+
 .scoreList {
-  margin-top: 30px;
   border: solid 2px #111;
   width: 100%;
   min-width: 300px;
+  font-size: 24px;
+  line-height: 1.5em;
+}
+
+.formContainer {
+  width: 40%;
 }
 
 .formContainer form {
@@ -50,9 +76,16 @@ li:nth-child(even) {
 
 form input {
   margin-bottom: 15px;
+  border: solid 2px #111;
+  outline: none;
+  height: 35px;
+  padding-left: 10px;
+  font-size: 18px;
+  box-shadow: 7px 7px 12px #333;
 }
 
 form button {
+  margin-top: 20px;
   width: 100px;
   padding: 3px 20px;
   float: right;
