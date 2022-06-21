@@ -42,13 +42,13 @@ h1 {
   font-size: 2em;
 }
 
-.scoreContainer {  
+.scoreContainer {
   width: 50%;
 }
 
 .scoreContainer > div {
   display: flex;
-  justify-content:space-between;
+  justify-content: space-between;
 }
 
 .refresh {
