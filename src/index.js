@@ -8,7 +8,7 @@ refresh.addEventListener('click', () => {
 
 const listContainer = document.querySelector('#scoreList');
 scoreData.forEach((el, index) => {
-  const listItem =  document.createElement('li');
+  const listItem = document.createElement('li');
   listItem.className = 'item';
   listItem.id = `item${index}`;
   listItem.innerHTML += `<span>${el.name} :</span><span> ${el.score}</span>`;
