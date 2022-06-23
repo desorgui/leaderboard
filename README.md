@@ -1,6 +1,6 @@
 # leaderboard
 
-> I had to build the structure of the Leaderboard project using Html CSS, Webpack and so on..
+> I had to build the structure of the Leaderboard project using Html CSS, Webpack and I had to create a fully functioning Leaderboard application. Using an API to manage the contents ...
 
 ## Built With
 
