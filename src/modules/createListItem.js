@@ -4,6 +4,6 @@ const createListItem = (user, score) => {
   listItem.className = 'item';
   listItem.innerHTML += `<span>${user} :</span><span> ${score}</span>`;
   listContainer.appendChild(listItem);
-}
+};
 
 export default createListItem;
