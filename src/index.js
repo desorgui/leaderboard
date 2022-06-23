@@ -1,16 +1,22 @@
 import './style.css';
-import scoreData from './modules/scoreData';
+import {addScoreToApi, scoreList} from './modules/leaderboardAPI';
+import createListItem from './modules/createListItem';
 
 const refresh = document.getElementById('refresh');
+const username = document.getElementById('name');
+const score = document.getElementById('score');
+const addScore = document.getElementById('addScore');
+const listItem = document.getElementsByClassName('item');
+
 refresh.addEventListener('click', () => {
-  window.location.reload();
+  if(!listItem.length){
+    scoreList();
+  }
 });
 
-const listContainer = document.querySelector('#scoreList');
-scoreData.forEach((el, index) => {
-  const listItem = document.createElement('li');
-  listItem.className = 'item';
-  listItem.id = `item${index}`;
-  listItem.innerHTML += `<span>${el.name} :</span><span> ${el.score}</span>`;
-  listContainer.appendChild(listItem);
+addScore.addEventListener('click', () => {
+  addScoreToApi(username.value, score.value);
+  createListItem(username.value, score.value)
+  username.value = null;
+  score.value = null;
 });
