@@ -39,8 +39,9 @@ const scoreList = () => {
   const leaderboardData = getScores();
   leaderboardData.then((value) => {
     if (value.result) {
-      value.result.forEach((element) => {
-        createListItem(element.user, element.score);
+      value.result.sort((a, b) => b.score - a.score);
+      value.result.forEach((element, index) => {
+        createListItem(element.user, element.score, index);
       });
     }
   });

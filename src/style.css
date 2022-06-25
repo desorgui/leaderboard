@@ -4,30 +4,46 @@
 }
 
 body {
-  padding: 150px;
+  padding: 10%;
+  background-image: linear-gradient(-45deg, rgb(240, 126, 126) 20%, white 20%, white 80%, rgb(177, 177, 252) 80%);
+  background-repeat: no-repeat;
 }
 
 button {
   font-weight: 600;
   cursor: pointer;
-  box-shadow: 4px 4px 8px #333;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.5);
 }
 
 li {
   padding: 0 10px;
   list-style: none;
-  min-height: 25px;
+  min-height: 80px;
+  margin-bottom: 20px;
+  border-radius: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.5);
 }
 
 li:nth-child(even) {
-  background-color: rgb(192, 179, 162);
+  background-color: rgb(240, 126, 126);
+}
+
+.masterContainer {
+  padding: 20px 30px;
+  background-color: white;
+  border-radius: 20px;
+  width: 100%;
 }
 
 .masterContainer > div {
   display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
   margin-top: 30px;
   width: 100%;
   justify-content: space-between;
@@ -35,6 +51,7 @@ li:nth-child(even) {
 
 h1 {
   font-size: 3.5em;
+  text-align: center;
 }
 
 .side-title {
@@ -49,45 +66,75 @@ h1 {
 .scoreContainer > div {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .refresh {
   padding: 7px 15px;
   max-height: 30px;
   font-size: 16px;
+  background-color: #f07e7e;
 }
 
 .scoreList {
-  border: solid 2px #111;
   width: 100%;
-  min-width: 300px;
+  min-width: 250px;
   font-size: 24px;
   line-height: 1.5em;
 }
 
 .formContainer {
   width: 40%;
+  min-width: 300px;
 }
 
 .formContainer form {
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 
 form input {
-  margin-bottom: 15px;
-  border: solid 2px #111;
-  outline: none;
-  height: 35px;
-  padding-left: 10px;
-  font-size: 18px;
-  box-shadow: 7px 7px 12px #333;
+  background: rgba(255,255,255,0.1);
+  border: none;
+  font-size: 16px;
+  height: auto;
+  margin: 0;
+  outline: 0;
+  padding: 15px;
+  width: 100%;
+  background-color: #e8eeef;
+  color: #8a97a0;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+  margin-bottom: 30px;
 }
 
 form button {
   margin-top: 20px;
   width: 100px;
-  padding: 3px 20px;
+  padding: 8px 20px;
   float: right;
   font-size: 16px;
+  background-color: #f07e7e;
+}
+
+.award {
+  color:#fcd146;
+  font-size: 24px;
+}
+
+#item0 .award {
+  font-size: 40px;
+}
+
+#item1 .award,
+#item2 .award{
+  font-size: 33px;
+}
+
+@media (max-width:768px) {
+  .formContainer,
+  .scoreContainer {
+    width: 100%;
+  }
 }
