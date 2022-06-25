@@ -15,7 +15,7 @@ refresh.addEventListener('click', () => {
 });
 
 addScore.addEventListener('click', () => {
-  const newItemIndex =  listItem.length;
+  const newItemIndex = listItem.length;
   addScoreToApi(username.value, score.value);
   createListItem(username.value, score.value, newItemIndex);
   username.value = null;
