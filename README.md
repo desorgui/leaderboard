@@ -2,12 +2,6 @@
 
 <div align="center">
 
-  <img src="./murple_logo.png" alt="logo" width="140"  height="auto" />
-  <br/>
-
-  <h3><b>Microverse Project</b></h3>
-
-
   <!-- Badges -->
 <p>
   <a href="https://github.com/desorgui/leaderboard/graphs/contributors">
