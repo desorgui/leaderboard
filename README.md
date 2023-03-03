@@ -74,8 +74,13 @@
 
 <!-- > Describe your project in 1 or 2 sentences. -->
 
-**[Leaderboard]** A website that displays scores submitted by different players. It also allows you to submit your score.
- the Leaderboard project Use Html, CSS, Webpack and an API to manage the contents. This is a fully functioning Leaderboard application.
+**[Leaderboard]** is an application built using JavaScript, HTML, CSS, Webpack, and an API. It allows users to compete against each other by submitting their scores, which are then displayed on a leaderboard in real-time.
+
+The leaderboard is fully customizable with a user-friendly design and can be sorted by different criteria. It includes a fetch button that retrieves the latest scores from the database via an API.
+
+This project is a great example of how to build a leaderboard application from scratch, and can be used as a starting point for creating similar applications.
+
+Feel free to fork and customize this project for your own use. Contributions are always welcome!
 
 ## :camera: Screenshots <a name="screenshots"></a>
 
